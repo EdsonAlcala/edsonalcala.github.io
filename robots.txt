@@ -1,3 +1,0 @@
-User-agent: *
-Sitemap: http://edsonalcala.net/sitemap.xml
-Disallow: /ghost/
