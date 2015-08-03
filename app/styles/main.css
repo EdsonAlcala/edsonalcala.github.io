@@ -67,3 +67,11 @@
 #navbar-edsonsite {
     font-size: medium;
 }
+
+/* Portfolio */
+
+.portfolio li a{
+	display: inline-block;
+	padding: 5px;
+	font-size: 16px;	
+}
