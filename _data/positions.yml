@@ -1,15 +1,15 @@
-Title: .NET Web Developer
-Company: DevFacto Canada
-Description: Development of a web application that provides a complete solution for training and delivering competencies of petroleum knowledge.
-Id: DevfactoDeveloper
-Period: September 2013 - April 2015
-Responsibilities:
+- Title: .NET Web Developer
+  Company: DevFacto Canada
+  Description: Development of a web application that provides a complete solution for training and delivering competencies of petroleum knowledge.
+  Id: DevfactoDeveloper
+  Period: September 2013 - April 2015
+  Responsibilities:
     - Name: Develop new modules and features.       
     - Name: Fix issues and bugs.        
     - Name: Migration of ASP.NET Web Forms to ASP.NET MVC.          
     - Name: Analyze requirements.        
     - Name: Mentor new members.                        
-Technologies:
+  Technologies:
     - Name: C#    
     - Name: ASP.NET Web Forms / MVC    
     - Name: Git    
@@ -26,18 +26,18 @@ Technologies:
     - Name: Assembla
     - Name: Open Office XML
 
-Title: .NET Web Developer                                      
-Company: Praxis Mexico
-Description: Development of a web application for administration of insurances and disasters developed under the Windows Azure platform.
-Id: PraxisDeveloper
-Period: February 2012 - August 2013
-Responsibilities: 
+- Title: .NET Web Developer                                      
+  Company: Praxis Mexico
+  Description: Development of a web application for administration of insurances and disasters developed under the Windows Azure platform.
+  Id: PraxisDeveloper
+  Period: February 2012 - August 2013
+  Responsibilities: 
     - Name: Develop new modules and features.
     - Name: Fix issues and bugs.
     - Name: Visit the customer to define new requirements.
     - Name: Analyze requirements.
     - Name: Elaboration of documentation like use cases.
-Technologies: 
+  Technologies: 
     - Name: C#
     - Name: ASP.NET Web Forms
     - Name: SVN
@@ -50,16 +50,16 @@ Technologies:
     - Name: JavaScript / JQuery
     - Name: HTML / CSS
     
-Title: Web Developer                                                
-Company: Ausa Group
-Description: Migration of a web application for administration of claims and assistance to insurances from Classic ASP to ASP.NET
-Id: AusaDeveloper
-Period: September 2011 \u2013 February 2012
-Responsibilities: 
+- Title: Web Developer                                                
+  Company: Ausa Group
+  Description: Migration of a web application for administration of claims and assistance to insurances from Classic ASP to ASP.NET
+  Id: AusaDeveloper
+  Period: September 2011 \u2013 February 2012
+  Responsibilities: 
     - Name: Develop new modules and features.
     - Name: Fix issues and bugs.
     - Name: Migrate modules from classic ASP to ASP.NET.                            
-Technologies: 
+  Technologies: 
     - Name: C#
     - Name: ASP.NET Web Forms
     - Name: Team Foundation
@@ -69,8 +69,4 @@ Technologies:
     - Name: ADO.NET
     - Name: JavaScript / JQuery
     - Name: HTML / CSS
-    - Name: Dev Express Controls
-                  
-                                              
-                
-
+    - Name: Dev Express Controls                                                                             

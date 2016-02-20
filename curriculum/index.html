@@ -12,63 +12,67 @@ layout: default
                 <p>
                     {{ section.Description }}
                 </p>
-
-                <!--
-                                    <div class="panel-group" id="accordion">
-                    <div class="panel panel-collapse panel-danger" ng-repeat="position in section.Positions">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">
-                                <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#collapse{{ position.Id }}">
-                                    {{ position.Title }}
-                                </a>
-                            </h3>
-                            <h5>
-                                {{ position.Period }} - {{ position.Company }}
-                            </h5>
-                        </div>
-                        <div id="collapse{{ position.Id }}" class="panel-collapse collapse in">
-                            <div class="panel-body">
-                                <p>{{ position.Description }}</p>
-                                <hr />
-                                <div class="panel-group" id="accordionResponsability{{ position.Id }}">
-                                    <div class="panel">
-                                        <a class="" data-toggle="collapse" data-parent="#accordionResponsability{{ position.Id }}" href="javascript:;" data-target="#responsability{{ position.Id }}">
-                                            Responsabilities »
+            
+            {% if section.Title == 'Positions'  %}
+                {% for position in site.data.positions %}
+                    <div class="panel-group" id="accordion">
+                            <div class="panel panel-collapse panel-danger">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#collapse{{ position.Id }}">
+                                            {{ position.Title }}
                                         </a>
-                                        <div id="responsability{{ position.Id }}" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <ul ng-repeat="responsibility in position.Responsibilities">
-                                                    <li>
-                                                        {{ responsibility }}
-                                                    </li>
-                                                </ul>
+                                    </h3>
+                                    <h5>
+                                        {{ position.Period }} - {{ position.Company }}
+                                    </h5>
+                                </div>
+                                <div id="collapse{{ position.Id }}" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>{{ position.Description }}</p>
+                                        <hr />
+                                        <div class="panel-group" id="accordionResponsability{{ position.Id }}">
+                                            <div class="panel">
+                                                <a class="" data-toggle="collapse" data-parent="#accordionResponsability{{ position.Id }}" href="javascript:;" data-target="#responsability{{ position.Id }}">
+                                                    Responsabilities »
+                                                </a>
+                                                <div id="responsability{{ position.Id }}" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        {% for responsibility in position.Responsibilities  %}
+                                                            <ul ng-repeat="responsibility in position.Responsibilities">
+                                                                <li>
+                                                                    {{ responsibility.Name }}
+                                                                </li>
+                                                            </ul>
+                                                        {% endfor %}
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="panel-group" id="accordionTechnology{{ position.Id }}">
-                                    <div class="panel">
-                                        <a class="" data-toggle="collapse" data-parent="#accordionTechnology{{ position.Id }}" href="javascript:;" data-target="#technology{{ position.Id }}">
-                                            Technologies »
-                                        </a>
-                                        <div id="technology{{ position.Id }}" class="panel-collapse collapse">
-                                            <div class="panel-body">
-                                                <ul ng-repeat="technology in position.Technologies">
-                                                    <li>
-                                                        {{ technology }}
-                                                    </li>
-                                                </ul>
+                                        <div class="panel-group" id="accordionTechnology{{ position.Id }}">
+                                            <div class="panel">
+                                                <a class="" data-toggle="collapse" data-parent="#accordionTechnology{{ position.Id }}" href="javascript:;" data-target="#technology{{ position.Id }}">
+                                                    Technologies »
+                                                </a>
+                                                <div id="technology{{ position.Id }}" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        {% for technology in position.Technologies  %}                                                        
+                                                        <ul>
+                                                            <li>
+                                                                {{ technology.Name }}
+                                                            </li>
+                                                        </ul>
+                                                        {% endfor %}
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                    
-                    
-                 -->
+                        </div>        
+                    {% endfor %}
+                {% endif %}                               
                 <div>
                     {% if section.Title == 'Another Skills'  %}
                         {% for otherskill in site.data.otherskills %}
