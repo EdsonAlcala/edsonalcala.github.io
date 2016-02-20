@@ -1,0 +1,22 @@
+{
+  "name": "edsonalcala-website",
+  "version": "1.0.0",
+  "description": "my website, developed with love",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdsonAlcala/edsonalcala.github.io.git"
+  },
+  "keywords": [
+    "personal-site"
+  ],
+  "author": "edsonalcala\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdsonAlcala/edsonalcala.github.io/issues"
+  },
+  "homepage": "https://github.com/EdsonAlcala/edsonalcala.github.io#readme"
+}
