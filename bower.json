@@ -1,0 +1,25 @@
+{
+  "name": "edsonalcala-website",
+  "description": "my website, developed with love",
+  "main": "gulpfile.js",
+  "authors": [
+    "edsonalcala"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "personal-site"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+   "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.6",
+    "font-awesome": "fontawesome#~4.5.0"  
+  }
+}

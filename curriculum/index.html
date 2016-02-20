@@ -1,0 +1,119 @@
+---
+layout: default
+---
+
+<section class="col-md-7 col-xs-12 col-lg-8  col-lg-offset-1">
+    <div class="hero-unit col-lg-11">       
+      {% for section in site.data.sections %}
+            <div class="page-header">
+                <h2>{{ section.Title }}</h2>
+            </div>
+            <div>
+                <p>
+                    {{ section.Description }}
+                </p>
+
+                <!--
+                                    <div class="panel-group" id="accordion">
+                    <div class="panel panel-collapse panel-danger" ng-repeat="position in section.Positions">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#collapse{{ position.Id }}">
+                                    {{ position.Title }}
+                                </a>
+                            </h3>
+                            <h5>
+                                {{ position.Period }} - {{ position.Company }}
+                            </h5>
+                        </div>
+                        <div id="collapse{{ position.Id }}" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>{{ position.Description }}</p>
+                                <hr />
+                                <div class="panel-group" id="accordionResponsability{{ position.Id }}">
+                                    <div class="panel">
+                                        <a class="" data-toggle="collapse" data-parent="#accordionResponsability{{ position.Id }}" href="javascript:;" data-target="#responsability{{ position.Id }}">
+                                            Responsabilities »
+                                        </a>
+                                        <div id="responsability{{ position.Id }}" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <ul ng-repeat="responsibility in position.Responsibilities">
+                                                    <li>
+                                                        {{ responsibility }}
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-group" id="accordionTechnology{{ position.Id }}">
+                                    <div class="panel">
+                                        <a class="" data-toggle="collapse" data-parent="#accordionTechnology{{ position.Id }}" href="javascript:;" data-target="#technology{{ position.Id }}">
+                                            Technologies »
+                                        </a>
+                                        <div id="technology{{ position.Id }}" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <ul ng-repeat="technology in position.Technologies">
+                                                    <li>
+                                                        {{ technology }}
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    
+                 -->
+                <div>
+                    {% if section.Title == 'Another Skills'  %}
+                        {% for otherskill in site.data.otherskills %}
+                            <ul>
+                                <li>{{ otherskill.Name }}</li>
+                            </ul>
+                        {% endfor %}        
+                    {% endif %}
+                </div>
+                <div>
+                    {% if section.Title == 'Interests'  %}
+                        {% for interest in site.data.interests %}
+                            <ul>
+                                <li>{{ interest.Name }}</li>
+                            </ul>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <div>
+                    {% if section.Title == 'Certifications'  %}
+                         {% for certification in site.data.certifications %}
+                            <ul>
+                                <li>{{ certification.Name }}</li>
+                            </ul>
+                        {% endfor %} 
+                    {% endif %}                                      
+                </div>    
+                {% if section.Title == 'Certifications'  %}
+                    {% for certification in site.data.certifications %}   
+                        <div class="col-lg-6 col-md-6 col-xs-12">                                     
+                            <img src="{{ certification.Image_Url }}" height="150" width="150" class="img-rounded" />                        
+                        </div>      
+                    {% endfor %}    
+                {% endif %}       
+            </div>
+         {% endfor %}
+    </div>
+
+</section>
+
+
+<aside class="col-md-3 col-xs-12 col-lg-3 col-lg-offset-0" style="padding-top:40px;">
+    <div class="row">
+        <a class="btn btn-block btn-danger" href="files/Edson-resume-en.pdf" target="_blank">
+            <h4>Download</h4>
+        </a>
+    </div>
+</aside>
