@@ -94,65 +94,45 @@ $hover-color: #F48221;
     -moz-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
     -ms-transition: all ease 0.3s;
-    transition: all ease 0.3s;
-    background-image: url(http://res.cloudinary.com/key-solutions/image/upload/v1455988724/edsonalcala/social-icons.png);
-    background-repeat: no-repeat;
-    display: block;
+    transition: all ease 0.3s;  
 }
 
-.social-slide:hover {    
+.social-slide:hover {
+    background-position: 0px -24px;
     box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
 }
 
+
 .facebook {
-    background-position: -39px -5px;
-    &:hover{
-        background-position: -39px -29px;
-    }
+    background-image: url(http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/facebook-hover.png);    
 }
 
 .youtube {
-    background-position: -107px -5px;
-    &:hover{
-        background-position: -107px -29px;
-    }
+    background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/youtube-hover.png');
 }
 
-.twitter {   
-    background-position: -73px -63px;
-    &:hover{
-        background-position: -73px -87px;
-    }
+.twitter {
+    background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/twitter-hover.png');
 }
 
 .googlePlus {
-    background-position: -73px -5px;
-    &:hover{
-        background-position: -73px -29px;
-    }
+    background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/google-hover.png');
 }
 
 .linkedIn {
-    background-position: -5px -63px;
-    &:hover{
-        background-position: -5px -87px;
-    }
+    background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/linkedin-hover.png');
 }
 
 .skype {
-    background-position: -39px -63px;
-    &:hover{
-        background-position: -39px -87px;
-    }
+    background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/skype-hover.png');
 }
 
 .blogger {
-    background-position: -5px -5px;
-    &:hover{
-        background-position: -5px -29px;
-    }
+    background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/blogger-hover.png');
 }
 
+
+/*Panels*/
 .panel-danger {
   border-color: #fff;
 }
