@@ -1,0 +1,32 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+            
+  {% include head.html %}
+  {% include seo.html %}
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  {% include styles.html %}
+  
+  <body>
+
+    {% include header.html %}
+
+    <div class="container">
+       {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    {% include analytics.html %}
+    
+    {% include piwik.html %}
+    
+    {% include libs.html %}
+
+    {% include scripts.html %}
+
+  </body>
+
+</html>

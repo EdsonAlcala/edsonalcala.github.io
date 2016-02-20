@@ -1,0 +1,5 @@
+{% if page.jsfiles %}
+  {% for js_file in page.jsfiles %}
+  <script src='/scripts/{{ js_file }}'></script>
+  {% endfor %}
+{% endif %}
