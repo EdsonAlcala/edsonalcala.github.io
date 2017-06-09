@@ -24,7 +24,7 @@ var config = {
 //Build the Jekyll Site
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);   
-    return cp.spawn('jekyll.bat', ['build'], {stdio: 'inherit'})
+    return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
@@ -68,7 +68,13 @@ gulp.task('fonts', ['sass', 'jekyll-build'], function() {
         .pipe(gulp.dest('fonts'));
 });
 
-gulp.task('build-js', ['fonts'], function() {
+gulp.task('images', ['fonts', 'jekyll-build'], function() {
+    return gulp.src(['./images/**.svg', './images/**.png'])
+        .pipe(gulp.dest('_site/images'))
+        .pipe(gulp.dest('images'));
+});
+
+gulp.task('build-js', ['images'], function() {
     var filterJS = gulpFilter('**/*.js', { restore: true });
     return gulp.src(mainBowerFiles({}))
         .pipe(filterJS)

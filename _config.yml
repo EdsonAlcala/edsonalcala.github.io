@@ -17,6 +17,12 @@ github_username:  EdsonAlcala
 
 # Build settings
 markdown: kramdown
-exclude: ["node_modules", "gulpfile.js", "package.json", "bower_components", "bower.json", "_assets"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "bower_components", "bower.json"]
 gems:
   - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: "_assets/images"
+    values:
+      image: true
