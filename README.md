@@ -18,6 +18,8 @@ My personal website where you can find information about me.
 # Clone into your computer
 > git clone https://github.com/EdsonAlcala/edsonalcala.github.io
 
+# Install dependencies
+
 > npm install
 
 ```
