@@ -13,9 +13,6 @@ My personal website where you can find information about me.
 
 > gem install jekyll-sitemap
 
-```
-
-```
 # Clone into your computer
 > git clone https://github.com/EdsonAlcala/edsonalcala.github.io
 
