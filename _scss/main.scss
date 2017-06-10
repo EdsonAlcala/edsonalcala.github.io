@@ -10,180 +10,294 @@ $small-font-size:10px;
 $hover-color: #F48221;
 
 // Import bootstrap and fontawesome
-@import "bootstrap";
+//@import "bootstrap";
 @import "font-awesome";
 
-@media (min-width: 980px) {
-    body {
-        padding-top: 60px;
-        padding-bottom: 42px;
-        margin-top: -40px;      
-    }          
-    section {
-        margin-bottom:20px;
-    }         
+html, body{
+    height: 100%;
+    width: 100%;
 }
 
-@media (max-width: 979px) {
-    .navbar-fixed-bottom {
-        position: static;
-        margin-left: 0px;
-        margin-right: 0px;     
-    }    
-}
-
-.navbar-default {
+body {
     background-color: white;
-    border-color: none;
-    border-width: 0 0 0px;
+    overflow: hidden;
 }
 
-.navbar-fixed-top {
-    border-width: 0 0 0px;
-
+.container{
+    background-color:black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 0; 
+}
+@media (min-width: 480px){
+     .container{
+        left: 20px;
+        right: 20px;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        left: 40px;
+        right: 40px;
+    }
 }
 
-.navbar-fixed-bottom {
-    background-color: white;      
+
+header {
+    position: absolute;
+    top:0;
+    left: 0;
+    height:50px;
+    width: 100%;
+    background-color: white;
+    .header-logo{
+        position: absolute;
+        height: 100%;
+        padding: 0;
+        width: 50px;
+        background-image: url(/images/edsonlogo-01.svg);  
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center center;
+        overflow: hidden;
+        left: 20px;
+    }
+}
+@media (min-height: 480px) and (min-width: 768px){
+    header {
+        height: 80px;
+        .header-logo{
+            height: 80px;
+            width: 80px;
+        }
+    }
+    
+}
+@media (min-width: 480px){
+    header .header-logo {
+        left: 40px;
+    }
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: red;
-    background-color: transparent;
+@media (min-width: 768px){
+    header .header-logo {
+        left: 60px;
+    }
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    text-decoration: none;
-    background-color: transparent;
+@media (min-width: 1180px){
+    header .header-logo {
+        left: 100px;
+    }
 }
 
-.navbar-default .navbar-nav > li > a:hover {
-    color: red;
-}
-.hero-unit {   
-    background-color: transparent;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;            
-}
-.hero-unit h1 {
-    margin-top:10px;
-    font-size: 80px;
- }
-.hero-unit p {
-    font-size: large;
-    font-weight: 200;
-    padding: 10px 5px 0px 0;
-}
+// .navbar-brand{
+//     width: 76px;
+//     height: 76px;
+//     padding: 0;
+// }
+// @media (min-width: 980px) {
+    
+//         //padding-top: 60px;
+//         //padding-bottom: 42px;
+//         //margin-top: -40px;      
+//     //}          
+//     // section {
+//     //     margin-bottom:20px;
+//     // }         
+// }
 
-#navbar-edsonsite {
-    font-size: medium;
-}
+// @media (max-width: 979px) {
+//     // .navbar-fixed-bottom {
+//     //     position: static;
+//     //     margin-left: 0px;
+//     //     margin-right: 0px;     
+//     // }    
+// }
+
+//.navbar-default {
+    //background-color: white;
+    //border-color: none;
+    //border-width: 0 0 0px;
+//}
+
+// .navbar-fixed-top {
+//     border-width: 0 0 0px;
+// }
+
+// .navbar-fixed-bottom {
+//     background-color: white;      
+// }
+
+// .navbar-default .navbar-nav > .active > a,
+// .navbar-default .navbar-nav > .active > a:hover,
+// .navbar-default .navbar-nav > .active > a:focus {
+//     color: red;
+//     background-color: transparent;
+// }
+
+// .navbar-default .navbar-nav > li > a:hover,
+// .navbar-default .navbar-nav > li > a:focus {
+//     text-decoration: none;
+//     background-color: transparent;
+// }
+
+// .navbar-default .navbar-nav > li > a:hover {
+//     color: red;
+// }
+// .hero-unit {   
+//     background-color: transparent;
+//     -webkit-border-radius: 6px;
+//     -moz-border-radius: 6px;
+//     border-radius: 6px;            
+// }
+// .hero-unit h1 {
+//     margin-top:10px;
+//     font-size: 80px;
+//  }
+// .hero-unit p {
+//     font-size: large;
+//     font-weight: 200;
+//     padding: 10px 5px 0px 0;
+// }
+
+// #navbar-edsonsite {
+//     font-size: medium;
+// }
 
 /*Social Icons*/
-.social-slide {
-    height: 24px;
-    width: 24px;
-    margin: 3px;
-    margin-top: 15px;
-    float: left;
-    -webkit-transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
-    transition: all ease 0.3s;  
-}
+// .social-slide {
+//     height: 24px;
+//     width: 24px;
+//     margin: 3px;
+//     margin-top: 15px;
+//     float: left;
+//     -webkit-transition: all ease 0.3s;
+//     -moz-transition: all ease 0.3s;
+//     -o-transition: all ease 0.3s;
+//     -ms-transition: all ease 0.3s;
+//     transition: all ease 0.3s;  
+// }
 
-.social-slide:hover {
-    background-position: 0px -24px;
-    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
-}
+// .social-slide:hover {
+//     background-position: 0px -24px;
+//     box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+// }
 
 
-.facebook {
-    background-image: url(http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/facebook-hover.png);    
-}
+// .facebook {
+//     background-image: url(http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/facebook-hover.png);    
+// }
 
-.youtube {
-    background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/youtube-hover.png');
-}
+// .youtube {
+//     background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/youtube-hover.png');
+// }
 
-.twitter {
-    background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/twitter-hover.png');
-}
+// .twitter {
+//     background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/twitter-hover.png');
+// }
 
-.googlePlus {
-    background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/google-hover.png');
-}
+// .googlePlus {
+//     background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/google-hover.png');
+// }
 
-.linkedIn {
-    background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/linkedin-hover.png');
-}
+// .linkedIn {
+//     background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/linkedin-hover.png');
+// }
 
-.skype {
-    background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/skype-hover.png');
-}
+// .skype {
+//     background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/skype-hover.png');
+// }
 
-.blogger {
-    background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/blogger-hover.png');
-}
+// .blogger {
+//     background-image: url('http://res.cloudinary.com/key-solutions/image/upload/v1455993782/edsonalcala/blogger-hover.png');
+// }
 
 
 /*Panels*/
-.panel-danger {
-  border-color: #fff;
-}
-.panel-danger > .panel-heading { 
-   color: #000;
-  font-weight:bolder;
-  background-color: #fff;
-  border-color: #fff; 
-}
-.panel-danger > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #fff;
-}
-.panel-danger > .panel-heading .badge {
-  color: #f2dede;
-  background-color: #d9534f;
-}
-.panel-danger > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #fff;
-}
-.panel-danger h3 {
-     font-weight:500;
-     font-size:x-large;
-}
+// .panel-danger {
+//   border-color: #fff;
+// }
+// .panel-danger > .panel-heading { 
+//    color: #000;
+//   font-weight:bolder;
+//   background-color: #fff;
+//   border-color: #fff; 
+// }
+// .panel-danger > .panel-heading + .panel-collapse > .panel-body {
+//   border-top-color: #fff;
+// }
+// .panel-danger > .panel-heading .badge {
+//   color: #f2dede;
+//   background-color: #d9534f;
+// }
+// .panel-danger > .panel-footer + .panel-collapse > .panel-body {
+//   border-bottom-color: #fff;
+// }
+// .panel-danger h3 {
+//      font-weight:500;
+//      font-size:x-large;
+// }
 
-.panel-danger > .panel-heading a:hover,
-.panel-danger > .panel-heading a:active,
-.panel-danger > .panel-heading a:focus,
-.panel-danger > .panel-heading a.active
- {
-    color: #990033;
-    text-decoration:none;
+// .panel-danger > .panel-heading a:hover,
+// .panel-danger > .panel-heading a:active,
+// .panel-danger > .panel-heading a:focus,
+// .panel-danger > .panel-heading a.active
+//  {
+//     color: #990033;
+//     text-decoration:none;
     
-}
-.panel-heading {
-  padding: 10px 15px 0px 15px;
-  border-bottom: 1px solid transparent;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-.panel-heading > .dropdown .dropdown-toggle {
-  color: inherit;
-}
-.panel-danger > .panel-heading h3 { 
-    color: #990033;
-}
-.hero-unit h5.aboutme {
-    line-height:24px;
-}
+// }
+// .panel-heading {
+//   padding: 10px 15px 0px 15px;
+//   border-bottom: 1px solid transparent;
+//   border-top-left-radius: 3px;
+//   border-top-right-radius: 3px;
+// }
+// .panel-heading > .dropdown .dropdown-toggle {
+//   color: inherit;
+// }
+// .panel-danger > .panel-heading h3 { 
+//     color: #990033;
+// }
+// .hero-unit h5.aboutme {
+//     line-height:24px;
+// }
 
-.navbar-brand{
-    width: 76px;
-    height: 76px;
-    padding: 0;
-}
+
+
+
+
+// @media all and (min-width: 768px) and (min-height:480px) {
+//     header {
+//         height:76px
+//     }
+// }
+
+// @media all and (min-width: 480px) {
+//     header .navbar-brand {
+//         left:40px
+//     }
+// }
+
+// @media all and (min-width: 768px) {
+//     header .navbar-brand {
+//         left:60px
+//     }
+// }
+
+// @media all and (min-width: 768px) and (min-height:480px) {
+//     header .navbar-brand {
+//         width:76px
+//     }
+// }
+
+// @media all and (min-width: 1180px) {
+//     header .navbar-brand {
+//         left:100px
+//     }
+// }
