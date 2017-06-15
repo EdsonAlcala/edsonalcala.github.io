@@ -1,14 +1,16 @@
-//@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
 $font-family-base: 'Raleway', sans-serif;
 
 $icon-font-path: '../fonts/';
+$aboutPageColor: #4BB5EA;
 $democrachainColor: #6FD8EE;
 $mp3GrabbyColor: #E35E63;
 $tuMenuColor: #FA715E;
 $dataPassportColor: #0D1434;
 
-// Import bootstrap and fontawesome
-//@import "bootstrap";
+$redSelectedMenuOptionColor: #F14C4C;
+$whiteColor: #FEF7F7;
+$blackColor: #272424;
+
 @import "font-awesome";
 
 html, body{
