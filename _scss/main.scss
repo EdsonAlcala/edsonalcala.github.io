@@ -17,6 +17,13 @@ $blackColor: #272424;
     font-family: 'AvenirNext-Regular';
     src: url(/fonts/AvenirNext-Regular.ttf);
 }
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 html, body{
     font-family: 'AvenirNext-Regular';
     height: 100%;
@@ -27,7 +34,7 @@ html, body{
 body {
     background-color: $whiteColor;
     overflow: hidden;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .container{
