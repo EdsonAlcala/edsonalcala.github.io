@@ -17,14 +17,14 @@ var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
-var config = {   
+var config = {
     bowerDir: './bower_components'
 }
 
 //Build the Jekyll Site
 gulp.task('jekyll-build', function (done) {
-    browserSync.notify(messages.jekyllBuild);   
-    return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
+    browserSync.notify(messages.jekyllBuild);
+    return cp.spawn('jekyll.bat', ['build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
@@ -33,7 +33,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
     browserSync.reload();
 });
 
-//Wait for jekyll-build, then launch the Server 
+//Wait for jekyll-build, then launch the Server
 gulp.task('browser-sync', ['fonts'], function() {
     browserSync({
         server: {
@@ -53,7 +53,7 @@ gulp.task('sass', function () {
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(minifyCSS())
         .pipe(gulp.dest('_site/css'))
-        .pipe(browserSync.reload({ stream: true }))        
+        .pipe(browserSync.reload({ stream: true }))
         .pipe(gulp.dest('css'));
 });
 
@@ -84,8 +84,8 @@ gulp.task('build-js', ['images'], function() {
         .pipe(gulp.dest('./_site/scripts'));
 });
 
-gulp.task('minify-customjs', ['build-js'], function() {   
-    return gulp.src('./_assets/scripts/*.js')       
+gulp.task('minify-customjs', ['build-js'], function() {
+    return gulp.src('./_assets/scripts/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('./scripts'))
         .pipe(gulp.dest('./_site/scripts'));

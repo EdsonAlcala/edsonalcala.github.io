@@ -13,14 +13,21 @@ $blackColor: #272424;
 
 @import "font-awesome";
 
+@font-face {
+    font-family: 'AvenirNext-Regular';
+    src: url(/fonts/AvenirNext-Regular.ttf);
+}
 html, body{
+    font-family: 'AvenirNext-Regular';
     height: 100%;
     width: 100%;
+    min-width: 480px;
 }
 
 body {
     background-color: $whiteColor;
     overflow: hidden;
+    font-size: 8px;
 }
 
 .container{
@@ -50,14 +57,14 @@ header {
     position: absolute;
     top:0;
     left: 0;
-    height:50px;
+    height:30px;
     width: 100%;
     background-color: white;
     .header-logo{
         position: absolute;
         height: 100%;
         padding: 0;
-        width: 50px;
+        width: 40px;
         background-image: url(/images/edsonlogo.svg);
         background-repeat: no-repeat;
         background-size: 100%;
@@ -66,15 +73,7 @@ header {
         left: 20px;
     }
 }
-@media (min-height: 480px) and (min-width: 768px){
-    header {
-        height: 80px;
-        .header-logo{
-            height: 80px;
-            width: 80px;
-        }
-    }
-}
+
 @media (min-width: 480px){
     header .header-logo {
         left: 40px;
@@ -127,13 +126,13 @@ header {
 #secondary-nav{
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 2%;
     transform: translate(0, -50%);
     height: 100%;
     a{
         position: relative;
-        margin-left: 8px;
-        margin-right: 8px;
+        margin-left: 4px;
+        margin-right: 4px;
         text-decoration: none;
         display: inline-block;
     }
@@ -150,15 +149,26 @@ header {
 }
 .github, .curriculum,.contact{
     height: 100%;
-    width: 24px;
+    width: 12px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
 }
 
-@media (min-height: 480px) and (min-width: 768px){
-    .github, .curriculum,.contact{
-        width: 28px;
+@media (min-width: 768px){
+    body{
+      font-size: 12px;
+    }
+    .github, .curriculum,.contact {
+      width:16px;
+    }
+
+    header {
+        height: 50px;
+        .header-logo{
+            //height: 70px;
+            width: 50px;
+        }
     }
 }
 
