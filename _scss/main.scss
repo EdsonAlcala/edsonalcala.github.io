@@ -19,19 +19,18 @@ html, body{
 }
 
 body {
-    background-color: white;
+    background-color: $whiteColor;
     overflow: hidden;
 }
 
 .container{
-    background-color:black;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: hidden;
-    padding: 0; 
+    padding: 0;
 }
 @media (min-width: 480px){
      .container{
@@ -59,7 +58,7 @@ header {
         height: 100%;
         padding: 0;
         width: 50px;
-        background-image: url(/images/edsonlogo.svg);  
+        background-image: url(/images/edsonlogo.svg);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center center;
@@ -121,7 +120,7 @@ header {
                 }
             }
         }
-        
+
     }
 }
 
@@ -141,7 +140,7 @@ header {
 }
 
 .github{
-    background-image: url(/images/github-icon.svg);  
+    background-image: url(/images/github-icon.svg);
 }
 .curriculum{
     background-image: url(/images/cv-icon.svg);
@@ -161,4 +160,17 @@ header {
     .github, .curriculum,.contact{
         width: 28px;
     }
+}
+
+#about{
+  background: $aboutPageColor;
+}
+
+#side-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    transform: translate(0,-50%);
 }
