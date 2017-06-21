@@ -8,7 +8,7 @@ $tuMenuColor: #FA715E;
 $dataPassportColor: #0D1434;
 
 $redSelectedMenuOptionColor: #F14C4C;
-$whiteColor: #FEF7F7;
+$whiteColor: white;
 $blackColor: #272424;
 
 @import "font-awesome";
@@ -162,6 +162,14 @@ header {
     background-size: 100%;
 }
 
+section{
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 @media (min-width: 768px){
     body{
       font-size: 12px;
@@ -177,10 +185,19 @@ header {
             width: 50px;
         }
     }
+    section{
+      top:50px;
+    }
 }
 
 #about{
   background: $aboutPageColor;
+}
+#tumenu{
+  background: $tuMenuColor;
+}
+#mp3grabby{
+  background: $mp3GrabbyColor;
 }
 
 #side-nav {
