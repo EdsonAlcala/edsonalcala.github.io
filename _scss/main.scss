@@ -1,206 +1,122 @@
-$icon-font-path: '../fonts/';
-$aboutPageColor: #4BB5EA;
-$democrachainColor: #6FD8EE;
-$mp3GrabbyColor: #E35E63;
-$tuMenuColor: #FA715E;
 $dataPassportColor: #0D1434;
+$tuMenuColor: #FA715E;
+$mp3GrabbyColor: #E35E63;
+$aboutPageColor: #0B75AA;
+$democrachainColor: #54D5F0;
+$projectsColor: #503755;
 
-$redSelectedMenuOptionColor: #F14C4C;
-$whiteColor: white;
-$blackColor: #272424;
-
-@font-face {
-    font-family: 'AvenirNext-Regular';
-    src: url(/fonts/AvenirNext-Regular.ttf);
-}
-/* apply a natural box layout model to all elements, but allowing components to change */
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-html, body{
-    font-family: 'AvenirNext-Regular';
-    height: 100%;
-    width: 100%;
-    min-width: 480px;
-}
-
-body {
-    background-color: $whiteColor;
-    overflow: hidden;
-    font-size: 12px;
+section{
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  &.about{
+      background-color: $aboutPageColor;      
+  }
+  &.tumenu{
+    background: $tuMenuColor;
+  }
+  &.mp3grabby{
+    background: $mp3GrabbyColor;
+  }
+  &.projects{
+    background: $mp3GrabbyColor;
+  }
+  &.democrachain{
+    background: $democrachainColor;
+  }
+  &.datapassport{
+    background: $dataPassportColor;
+  }
 }
 
-.container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    padding: 0;
-}
-@media (min-width: 480px){
-     .container{
-        left: 20px;
-        right: 20px;
-    }
-}
 @media (min-width: 768px){
-    .container{
-        left: 40px;
-        right: 40px;
-    }
-}
-
-
-header {
-    position: absolute;
-    top:0;
-    left: 0;
-    height:30px;
-    width: 100%;
-    background-color: white;
-    .header-logo{
-        position: absolute;
-        height: 100%;
-        padding: 0;
-        width: 40px;
-        background-image: url(/images/edsonlogo.svg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center center;
-        overflow: hidden;
-        left: 20px;
-    }
-}
-
-@media (min-width: 480px){
-    header .header-logo {
-        left: 40px;
+    section{
+      &.about{
+        background: url(/public/images/image-about-bg.jpg) right no-repeat;
+        background-size: 100% 100%;
+      }
     }
 }
 
 @media (min-width: 768px){
-    header .header-logo {
-        left: 60px;
+    section{
+      top:70px;
+    }
+}
+
+h1 {
+    position: relative;
+    margin-left: 20px;
+    font-size: 42px;
+    color: #F7F7F7;
+    margin-bottom: 10px;
+}
+
+p{
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 16px;
+  color: #F7F7F7;
+  white-space: pre-line;
+  margin-top: 0;
+  text-align: left;
+}
+
+@media (min-width: 480px){
+    p{
+      margin-left: 40px;
+    }
+}
+
+@media (min-width: 768px){
+    p{
+      width:50%;
+    }
+}
+
+@media (min-width: 968px){
+    p{
+      width:45%;
+      font-size: 18px;
     }
 }
 
 @media (min-width: 1180px){
-    header .header-logo {
-        left: 100px;
-    }
+    p{
+      margin-left: 100px;
+      margin-right: 100px;
+      width: 35%;
+    }  
 }
 
-#primary-nav{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    ul{
-        list-style: none;
-        padding: 0;
-        li{
-            height: 100%;
-            display: inline-block;
-            a{
-                position: relative;
-                padding: 10px 10px 4px;
-                color: #000;
-                text-transform: capitalize;
-                text-decoration: none;
-                span{
-                     background-color: #000;
-                     position: absolute;
-                    bottom: 0;
-                    left: 6px;
-                    right: 6px;
-                    height: 2px;
-                }
-            }
-        }
 
-    }
-}
 
-#secondary-nav{
-    position: absolute;
-    top: 50%;
-    right: 2%;
-    transform: translate(0, -50%);
-    height: 100%;
-    a{
-        position: relative;
-        margin-left: 4px;
-        margin-right: 4px;
-        text-decoration: none;
-        display: inline-block;
-    }
-}
-
-.github{
-    background-image: url(/images/github-icon.svg);
-}
-.curriculum{
-    background-image: url(/images/cv-icon.svg);
-}
-.contact{
-    background-image: url(/images/envelope-icon.svg);
-}
-.github, .curriculum,.contact{
-    height: 100%;
-    width: 16px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-}
-
-section{
+img{
   position: absolute;
-  top: 30px;
-  left: 0;
-  right: 0;
   bottom: 0;
+  left: 0;
+  width: 40%;
+}
+
+@media (min-width: 480px){
+    h1{
+        margin-left: 40px;        
+    }   
 }
 
 @media (min-width: 768px){
-    body{
-      font-size: 12px;
-    }
-    .github, .curriculum,.contact {
-      width:16px;
-    }
-
-    header {
-        height: 50px;
-        .header-logo{
-            //height: 70px;
-            width: 50px;
-        }
-    }
-    section{
-      top:50px;
+      h1{
+        margin-left: 60px;
+        margin-right: 60px;
     }
 }
 
-#about{
-  background: $aboutPageColor;
-}
-#tumenu{
-  background: $tuMenuColor;
-}
-#mp3grabby{
-  background: $mp3GrabbyColor;
-}
-
-#side-nav {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    transform: translate(0,-50%);
+@media (min-width: 1180px){
+      h1{
+        margin-left: 100px;
+        margin-right: 100px;        
+    }
 }
