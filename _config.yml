@@ -14,7 +14,12 @@ description: >
 url: "http://edsonalcala.net" # the base hostname & protocol for your site
 twitter_username: EdsonAlcala
 github_username:  EdsonAlcala
-
+navigation:
+- text: About
+  url: /
+- text: Projects
+  url: /projects/
+  
 # Build settings
 markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json", "bower_components", "bower.json"]
