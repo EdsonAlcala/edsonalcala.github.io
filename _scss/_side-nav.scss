@@ -1,0 +1,29 @@
+section nav.side-nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 320px;
+    overflow: hidden;
+    transform: translate(0,-50%);
+    ul{
+      list-style: none;
+      height: 100%;
+      float: right;
+      padding-right: 15px;
+      overflow: hidden;
+      li{
+          line-height: 30px;
+      }
+      a{
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+        &.active{
+          color:#272424;
+        }
+        &.active.datapassport{
+          color: #F14C4C;
+        }
+      }
+    }
+}

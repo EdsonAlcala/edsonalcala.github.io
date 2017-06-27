@@ -1,0 +1,26 @@
+<header>
+    <a class="header-logo" href="/">
+    </a>
+    <nav class="header-primary-nav">
+        <ul>
+            {% for item in site.navigation %} 
+            {% assign class = 'nav-item' %} 
+                {% if page.url == item.url %} 
+                    {% assign class = 'nav-item active' %} 
+                {% endif %}
+            <li>
+                <a href="{{ item.url }}" class="{{ class }}">{{ item.text }}
+                <span></span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+    <nav class="header-secondary-nav">
+        <a target="blank" href="https://github.com/EdsonAlcala" class="github"></a>
+        <a target="blank" href="http://res.cloudinary.com/key-solutions/image/upload/v1498084509/edson-resume-v2_sxljb5.pdf" class="curriculum"></a>
+        <a href="mailto:hello@edsonalcala.com" class="contact"></a>
+    </nav>
+
+</header>

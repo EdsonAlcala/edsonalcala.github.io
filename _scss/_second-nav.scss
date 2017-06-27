@@ -1,0 +1,45 @@
+.header-secondary-nav {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(0, -50%);
+    height: 100%;
+    a{
+        position: relative;
+        margin-left: 4px;
+        margin-right: 4px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .github {
+        background-image: url(/images/github-icon.svg);
+    }
+    .curriculum {
+        background-image: url(/images/cv-icon.svg);
+    }
+    .contact {
+        background-image: url(/images/envelope-icon.svg);
+    }
+    .github, .curriculum,.contact {
+        height: 100%;
+        width: 16px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+    }
+}
+
+
+
+@media (min-width: 768px){
+  .header-secondary-nav{
+      .github, .curriculum,.contact {
+        width: 24px;
+      }
+      a{
+          margin-left: 8px;
+          margin-right: 8px;
+      }
+  }
+}

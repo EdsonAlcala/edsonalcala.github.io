@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'AvenirNext-Regular';
+    src: url(/fonts/AvenirNext-Regular.ttf);
+}
+
+html, body{
+    font-family: 'AvenirNext-Regular';
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: white;
+    overflow: hidden;
+    font-size: 12px;
+}
+@media (min-width: 768px){
+    body {
+        font-size: 14px;
+    }
+}

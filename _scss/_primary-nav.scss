@@ -1,0 +1,40 @@
+.header-primary-nav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            height: 100%;
+            display: inline-block;
+            a{
+                position: relative;
+                padding: 10px 10px 4px;
+                color: #000;
+                text-transform: capitalize;
+                text-decoration: none;
+                span{
+                    background-color: #e5e5e5;
+                    position: absolute;
+                    bottom: 0;
+                    left: 6px;
+                    right: 6px;
+                    height: 2px;
+                }
+                &.active{
+                  span{
+                    background-color: #000;
+                  }
+                }
+            }
+            &:hover{
+              span{
+                background-color: #000;
+              }
+            }
+        }
+
+    }
+}

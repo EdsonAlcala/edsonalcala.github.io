@@ -1,0 +1,122 @@
+$dataPassportColor: #0D1434;
+$tuMenuColor: #FA715E;
+$mp3GrabbyColor: #E35E63;
+$aboutPageColor: #0B75AA;
+$democrachainColor: #54D5F0;
+$projectsColor: #503755;
+
+section{
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  &.about{
+      background-color: $aboutPageColor;      
+  }
+  &.tumenu{
+    background: $tuMenuColor;
+  }
+  &.mp3grabby{
+    background: $mp3GrabbyColor;
+  }
+  &.projects{
+    background: $mp3GrabbyColor;
+  }
+  &.democrachain{
+    background: $democrachainColor;
+  }
+  &.datapassport{
+    background: $dataPassportColor;
+  }
+}
+
+@media (min-width: 768px){
+    section{
+      &.about{
+        background: url(../images/image-about-bg.jpg) right no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+}
+
+@media (min-width: 768px){
+    section{
+      top:70px;
+    }
+}
+
+h1 {
+    position: relative;
+    margin-left: 20px;
+    font-size: 42px;
+    color: #F7F7F7;
+    margin-bottom: 10px;
+}
+
+p{
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 16px;
+  color: #F7F7F7;
+  white-space: pre-line;
+  margin-top: 0;
+  text-align: left;
+}
+
+@media (min-width: 480px){
+    p{
+      margin-left: 40px;
+    }
+}
+
+@media (min-width: 768px){
+    p{
+      width:50%;
+    }
+}
+
+@media (min-width: 968px){
+    p{
+      width:45%;
+      font-size: 18px;
+    }
+}
+
+@media (min-width: 1180px){
+    p{
+      margin-left: 100px;
+      margin-right: 100px;
+      width: 35%;
+    }  
+}
+
+
+
+img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+}
+
+@media (min-width: 480px){
+    h1{
+        margin-left: 40px;        
+    }   
+}
+
+@media (min-width: 768px){
+      h1{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media (min-width: 1180px){
+      h1{
+        margin-left: 100px;
+        margin-right: 100px;        
+    }
+}

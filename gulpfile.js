@@ -69,7 +69,7 @@ gulp.task('fonts', ['sass', 'jekyll-build'], function() {
 });
 
 gulp.task('images', ['fonts', 'jekyll-build'], function() {
-    return gulp.src(['./images/**.svg', './images/**.png'])
+    return gulp.src(['./images/**.svg', './images/**.png', './images/**.jpg'])
         .pipe(gulp.dest('_site/images'))
         .pipe(gulp.dest('images'));
 });

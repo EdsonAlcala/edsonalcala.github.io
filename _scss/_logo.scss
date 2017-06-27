@@ -1,0 +1,36 @@
+.header-logo{
+    position: absolute;
+    height: 100%;
+    padding: 0;
+    width: 40px;
+    background-image: url(/images/edsonlogo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    overflow: hidden;
+    left: 20px;
+}
+
+@media (min-width: 480px){
+    .header-logo {
+        left: 40px;
+    }
+}
+
+@media (min-width: 768px){
+    .header-logo {
+        left: 60px;
+    }
+}
+
+@media (min-width: 1180px){
+    .header-logo {
+      left: 100px;
+    }
+}
+
+@media (min-width: 768px){
+  .header-logo {
+    width: 70px;
+  }
+}
