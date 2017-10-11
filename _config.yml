@@ -2,9 +2,9 @@
 permalink:      /:year-:month-:day/:title
 
 # Setup
-title:          Tale
-paginate:       5
-baseurl:        "/tale"
+title:          Edson Alcala
+paginate:       10
+baseurl:        "/"
 url:            "http://www.edsonalcala.com"
 
 # Assets

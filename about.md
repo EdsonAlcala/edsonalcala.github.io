@@ -1,15 +1,17 @@
 ---
 layout: post
 title: "About"
-author: "Chester"
+author: "Edson Alcala"
 permalink: /about/
 ---
 
-A friend of mine writes short stories. One sunny day, I asked if he wanted a website to showcase his works and he agreed. I decided to use GitHub Pages to host his site. That way he wouldn't have to buy a domain and a server.
+Software Architect and Informatics Designer currently based in Edinburgh, Scotland. 
 
-While doing some research up on GitHub Pages, I accidentally chanced upon this _simple, blog-aware, static site generator_ called [Jekyll](https://jekyllrb.com/) which works really well with GitHub Pages. I figured it would do just fine for my friend and I set about searching for a pretty theme. I wanted a theme with a _book-ish_ vibe. Unfortunately, most of the themes were too modern. Eventually, I caved and begun working on my own theme. With the help of [Poole](https://github.com/poole/poole), the Jekyll Butler, I was able to build **Tale**.
+After finishing a Bachelor degree in Electronics, I decided to work in the software industry, where I collaborated in the development of digital products for web and mobile platforms. 
 
-## Contribute
-Feel free to create an issue or make a pull request on [GitHub](https://github.com/chesterhow/tale).
+Passionate about technology and with a desire of continuous learning and self development, I moved to the United Kingdom to pursue a master degree in Design Informatics at The University of Edinburgh. 
 
-Thanks for reading!
+During my studies I had the opportunity to learn emerging technologies and new ways of generation of value in current economies. I like to work at the intersection of art and technology with a human centred approach. 
+
+Currently working and exploring new business models and value exchange between people and machine to machine with Blockchain technology and smart contracts.
+
