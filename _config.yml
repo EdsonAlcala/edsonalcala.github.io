@@ -1,5 +1,5 @@
 # Permalinks
-permalink:      /:year-:month-:day/:title
+permalink:      /:title
 
 # Setup
 title:          Edson Alcala
