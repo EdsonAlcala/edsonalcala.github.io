@@ -24,6 +24,9 @@
       <span>
         &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}.
       </span>
+      {% if jekyll.environment == "production" %}
+        {% include piwik.html %}
+      {% endif %}      
     </footer>
   </body>
 </html>

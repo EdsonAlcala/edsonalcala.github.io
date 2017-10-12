@@ -8,6 +8,8 @@ layout: default
 
   {{ content }}
   
-  {% include piwik.html %}
+  {% if jekyll.environment == "production" %}
+    {% include piwik.html %}
+  {% endif %}      
 
 </div>
